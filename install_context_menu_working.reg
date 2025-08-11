@@ -1,0 +1,79 @@
+Windows Registry Editor Version 5.00
+
+; JPG Оптимизатор - Рабочий .reg файл для контекстного меню
+
+; Добавляем "Оптимизировать JPG (сохранить оригиналы)" в контекстное меню для папок
+[HKEY_CLASSES_ROOT\Directory\shell\OptimizeJPGKeep]
+@="Оптимизировать JPG (сохранить оригиналы)"
+"Icon"="shell32.dll,3"
+
+[HKEY_CLASSES_ROOT\Directory\shell\OptimizeJPGKeep\command]
+@="\"C:\\Scripts\\jpg to opti\\optimize_jpg_keep_originals.bat\" \"%1\""
+
+; Добавляем "Оптимизировать JPG (заменить оригиналы)" в контекстное меню для папок
+[HKEY_CLASSES_ROOT\Directory\shell\OptimizeJPGReplace]
+@="Оптимизировать JPG (заменить оригиналы)"
+"Icon"="shell32.dll,4"
+
+[HKEY_CLASSES_ROOT\Directory\shell\OptimizeJPGReplace\command]
+@="\"C:\\Scripts\\jpg to opti\\optimize_jpg_replace_originals.bat\" \"%1\""
+
+; Добавляем в контекстное меню для фона папки (правый клик на пустое место)
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OptimizeJPGKeep]
+@="Оптимизировать JPG (сохранить оригиналы)"
+"Icon"="shell32.dll,3"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OptimizeJPGKeep\command]
+@="\"C:\\Scripts\\jpg to opti\\optimize_jpg_keep_originals.bat\" \"%V\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OptimizeJPGReplace]
+@="Оптимизировать JPG (заменить оригиналы)"
+"Icon"="shell32.dll,4"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OptimizeJPGReplace\command]
+@="\"C:\\Scripts\\jpg to opti\\optimize_jpg_replace_originals.bat\" \"%V\""
+
+; Добавляем в контекстное меню для JPG файлов
+[HKEY_CLASSES_ROOT\.jpg\shell\OptimizeJPGKeep]
+@="Оптимизировать JPG (сохранить оригинал)"
+"Icon"="shell32.dll,3"
+
+[HKEY_CLASSES_ROOT\.jpg\shell\OptimizeJPGKeep\command]
+@="\"C:\\Scripts\\jpg to opti\\optimize_jpg_keep_originals.bat\" \"%1\""
+
+[HKEY_CLASSES_ROOT\.jpg\shell\OptimizeJPGReplace]
+@="Оптимизировать JPG (заменить оригинал)"
+"Icon"="shell32.dll,4"
+
+[HKEY_CLASSES_ROOT\.jpg\shell\OptimizeJPGReplace\command]
+@="\"C:\\Scripts\\jpg to opti\\optimize_jpg_replace_originals.bat\" \"%1\""
+
+; Добавляем в контекстное меню для JPEG файлов
+[HKEY_CLASSES_ROOT\.jpeg\shell\OptimizeJPGKeep]
+@="Оптимизировать JPG (сохранить оригинал)"
+"Icon"="shell32.dll,3"
+
+[HKEY_CLASSES_ROOT\.jpeg\shell\OptimizeJPGKeep\command]
+@="\"C:\\Scripts\\jpg to opti\\optimize_jpg_keep_originals.bat\" \"%1\""
+
+[HKEY_CLASSES_ROOT\.jpeg\shell\OptimizeJPGReplace]
+@="Оптимизировать JPG (заменить оригинал)"
+"Icon"="shell32.dll,4"
+
+[HKEY_CLASSES_ROOT\.jpeg\shell\OptimizeJPGReplace\command]
+@="\"C:\\Scripts\\jpg to opti\\optimize_jpg_replace_originals.bat\" \"%1\""
+
+; Добавляем в контекстное меню для нескольких выбранных JPG файлов
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\shell\OptimizeJPGKeep]
+@="Оптимизировать JPG (сохранить оригинал)"
+"Icon"="shell32.dll,3"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\shell\OptimizeJPGKeep\command]
+@="\"C:\\Scripts\\jpg to opti\\optimize_jpg_keep_originals.bat\" \"%1\""
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\shell\OptimizeJPGReplace]
+@="Оптимизировать JPG (заменить оригинал)"
+"Icon"="shell32.dll,4"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\shell\OptimizeJPGReplace\command]
+@="\"C:\\Scripts\\jpg to opti\\optimize_jpg_replace_originals.bat\" \"%1\""

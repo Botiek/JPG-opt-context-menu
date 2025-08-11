@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+; Удаление JPG Оптимизатора из контекстного меню
+
+; Удаляем для папок
+[-HKEY_CLASSES_ROOT\Directory\shell\OptimizeJPGKeep]
+[-HKEY_CLASSES_ROOT\Directory\shell\OptimizeJPGReplace]
+
+; Удаляем для фона папки
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\OptimizeJPGKeep]
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\OptimizeJPGReplace]
+
+; Удаляем для JPG файлов
+[-HKEY_CLASSES_ROOT\.jpg\shell\OptimizeJPGKeep]
+[-HKEY_CLASSES_ROOT\.jpg\shell\OptimizeJPGReplace]
+
+; Удаляем для JPEG файлов
+[-HKEY_CLASSES_ROOT\.jpeg\shell\OptimizeJPGKeep]
+[-HKEY_CLASSES_ROOT\.jpeg\shell\OptimizeJPGReplace]
+
+; Удаляем для системных ассоциаций
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\shell\OptimizeJPGKeep]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\shell\OptimizeJPGReplace]
