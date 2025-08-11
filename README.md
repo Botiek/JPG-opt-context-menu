@@ -91,7 +91,6 @@ jpg to opti/
 ├── create_test_image.py                # Создание тестового изображения
 ├── requirements.txt                     # Python зависимости
 ├── README.md                           # Эта документация
-└── test_images/                        # Папка для тестирования
 ```
 
 ## 🗑️ Удаление
